@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Clima - #boraCodar 10</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/src/reset.css" />
+    <link rel="stylesheet" href="./assets/src/style.css" />
+    <link rel="stylesheet" href="./assets/src/media-query.css" />
+  </head>
+  <body>
+    <main>
+      <section class="temperature-now box-shadow">
+        <img
+          src="./assets/images/clouds.svg"
+          alt="Duas nuvens brancas, uma atrás da outra"
+        />
+        <p class="current-location">
+          <span
+            ><img
+              src="./assets/images/location-pin.svg"
+              alt="pin de localização" /></span
+          >São Paulo, SP
+        </p>
+        <div class="temperature">
+          <h2>18°C</h2>
+          <p>22° <span class="min-temperature">16°</span></p>
+        </div>
+        <div class="statistics-wrapper">
+          <div class="statistics">
+            <img src="./assets/images/wind.svg" alt="svg que ilustra vento" />
+            <div class="info-wrapper">
+              <p class="title">Vento</p>
+              <p class="info">17<span>km/h</span></p>
+            </div>
+          </div>
+          <div class="statistics">
+            <img
+              src="./assets/images/humidity.svg"
+              alt="imagem de gotas de água que ilustra umidade"
+            />
+            <div class="info-wrapper">
+              <p class="title">Umidade</p>
+              <p class="info">31 <span>%</span></p>
+            </div>
+          </div>
+          <div class="statistics">
+            <img
+              src="./assets/images/transparent-rain.svg"
+              alt="imagem de nuvem com gotas de chuva"
+            />
+            <div class="info-wrapper">
+              <p class="title">Chuva</p>
+              <p class="info">10 <span>%</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="air-quality section-general">
+        <p class="section-title">
+          <span
+            ><img
+              src="./assets/images/leaf.svg"
+              alt="Imagem de uma folha"
+            />Qualidade do ar</span
+          >
+        </p>
+        <div class="main-info-wrapper">
+          <h3>Boa</h3>
+          <h2>21</h2>
+        </div>
+        <div class="additional-info-wrapper">
+          <p class="additional-info"><span>12.9</span>PM2.5</p>
+          <p class="additional-info"><span>12.9</span>PM10</p>
+          <p class="additional-info"><span>2.1</span>SO₂</p>
+          <p class="additional-info"><span>1.4</span>NO₂</p>
+          <p class="additional-info"><span>21.2</span>O₃</p>
+          <p class="additional-info"><span>0.7</span>CO</p>
+        </div>
+      </section>
+
+      <section class="sun-time section-general">
+        <p class="section-title">
+          <span
+            ><img
+              src="./assets/images/time.svg"
+              alt="Imagem de uma folha"
+            />Qualidade do ar</span
+          >
+        </p>
+        <img
+          src="./assets/images/sun-chart.svg"
+          alt="Gráfico que demonstra os horários do nascer e o pôr do sol, bem como o horário no momento da consulta"
+        />
+      </section>
+
+      <section class="week-weather section-general">
+        <div class="next-days-weather-wrapper">
+          <p>Amanhã</p>
+          <img src="./assets/images/clouds.svg" alt="Imagem de nuvens" />
+          <p>
+            <span class="max-temperature">21°C</span
+            ><span class="min-temperature">16°C</span>
+          </p>
+        </div>
+        <div class="next-days-weather-wrapper">
+          <p>Sexta-Feira</p>
+          <img src="./assets/images/sun.svg" alt="Imagem de sol" />
+          <p>
+            <span class="max-temperature">28°C</span
+            ><span class="min-temperature">20°C</span>
+          </p>
+        </div>
+        <div class="next-days-weather-wrapper">
+          <p>Sábado</p>
+          <img src="./assets/images/rain.svg" alt="Imagem de chuva" />
+          <p>
+            <span class="max-temperature">25°C</span
+            ><span class="min-temperature">21°C</span>
+          </p>
+        </div>
+        <div class="next-days-weather-wrapper">
+          <p>Domingo</p>
+          <img src="./assets/images/thunder.svg" alt="Imagem de trovoadas" />
+          <p>
+            <span class="max-temperature">20°C</span
+            ><span class="min-temperature">14°C</span>
+          </p>
+        </div>
+        <div class="next-days-weather-wrapper">
+          <p>Segunda-Feira</p>
+          <img
+            src="./assets/images/sun-with-clouds.svg"
+            alt="Imagem de sol com nuvens"
+          />
+          <p>
+            <span class="max-temperature">24°C</span
+            ><span class="min-temperature">18°C</span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
