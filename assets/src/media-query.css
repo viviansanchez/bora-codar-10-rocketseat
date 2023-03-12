@@ -1,1 +1,120 @@
-/* tamanho maximo 1 fica ok a versão desktop é 1080px. dos disso transformar o grid todo em uma coluna?  */
+@media (max-width: 1060px) {
+  body {
+    background-image: none;
+    background-color: #7f7aed;
+    /* height: fit-content; */
+  }
+
+  main {
+    display: grid;
+    grid-template-areas:
+      "A A"
+      "B C"
+      "D D";
+    max-width: 37.5rem;
+    padding-left: 0.875rem;
+  }
+
+  .temperature-now {
+    grid-area: A;
+  }
+
+  .air-quality {
+    grid-area: B;
+  }
+
+  .sun-time {
+    grid-area: C;
+  }
+
+  .week-weather {
+    grid-area: D;
+  }
+
+  .box-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .temperature-now {
+    margin-right: 0;
+    background-image: none;
+    background-color: #6d67d0;
+  }
+
+  .temperature-now > img {
+    width: 7rem;
+    height: 7rem;
+    top: -2.5rem;
+    left: -2.5rem;
+  }
+
+  .temperature-now .current-location {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .temperature-now .temperature {
+    margin-bottom: 1.5rem;
+  }
+
+  .temperature-now .temperature h2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
+
+  .sun-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sun-time img {
+    max-width: 18.75rem;
+  }
+}
+
+@media (max-width: 610px) {
+  body {
+    height: auto;
+  }
+
+  main {
+    max-width: 300px;
+    margin: 2rem 0;
+
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
+  }
+
+  .temperature-now {
+    background-image: url(../images/section-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .temperature-now .statistics-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .sun-time img {
+    max-width: 200px;
+  }
+
+  .week-weather {
+    grid-template-columns: 1fr;
+  }
+
+  .week-weather .next-days-weather-wrapper {
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 0px 8px 2px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 1px 0px 8px 2px rgba(0, 0, 0, 0.26);
+    box-shadow: 1px 0px 8px 2px rgba(0, 0, 0, 0.26);
+  }
+}
